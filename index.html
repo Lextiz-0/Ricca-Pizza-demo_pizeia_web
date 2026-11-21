@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#171313">
+  <meta name="description" content="Descubre el menú de Ricca Pizza: pizzas tradicionales, pizzas dulces, bebidas y postres. ¡La única buenísima!">
+  <title>Ricca Pizza | ¡La única buenísima!</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ENCABEZADO -->
+  <header class="site-header" id="inicio">
+    <div class="header-inner">
+      <a class="brand" href="#inicio" aria-label="Ricca Pizza, ir al inicio">
+        <span class="brand-mark">R</span>
+        <span class="brand-name">RICCA <strong>PIZZA</strong></span>
+      </a>
+
+      <button
+        class="menu-toggle"
+        id="menuToggle"
+        type="button"
+        aria-label="Abrir menú de navegación"
+        aria-expanded="false"
+        aria-controls="mainNavigation"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="main-navigation" id="mainNavigation" aria-label="Navegación principal">
+        <a href="#inicio">Inicio</a>
+        <a href="#menu">Menú</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- INICIO -->
+    <section class="hero-section" aria-labelledby="heroTitle">
+      <div class="hero-content">
+        <span class="eyebrow">EL SABOR QUE REÚNE</span>
+        <h1 id="heroTitle">¡La única<br><span>buenísima!</span></h1>
+        <p>Un buen momento siempre sabe mejor con pizza.</p>
+        <a class="button button-primary" href="#menu">Descubre nuestro menú</a>
+      </div>
+      <div class="hero-decoration" aria-hidden="true">
+        <div class="hero-pizza">🍕</div>
+        <span class="hero-spark spark-one">✦</span>
+        <span class="hero-spark spark-two">✧</span>
+      </div>
+    </section>
+
+    <!-- MENÚ -->
+    <section class="menu-section section-padding" id="menu">
+      <div class="section-heading">
+        <span class="eyebrow">HECHO PARA DISFRUTAR</span>
+        <h2>Nuestro <span>menú</span></h2>
+        <p>Encuentra tu favorito y disfruta cada rebanada.</p>
+      </div>
+
+      <div class="menu-category-filters" id="menuFilters" aria-label="Categorías del menú"></div>
+
+      <div class="menu-toolbar">
+        <p class="menu-count" id="menuCount" aria-live="polite"></p>
+        <div class="presentation-filters" id="presentationFilters" aria-label="Presentación de pizza">
+          <button class="presentation-button active" type="button" data-presentation="all">Todas</button>
+          <button class="presentation-button" type="button" data-presentation="complete">Completas</button>
+          <button class="presentation-button" type="button" data-presentation="slice">Rebanadas</button>
+        </div>
+      </div>
+
+      <div class="menu-grid" id="menuGrid" aria-live="polite"></div>
+    </section>
+
+    <!-- NOSOTROS -->
+    <section class="about-section section-padding" id="nosotros">
+      <div class="about-content">
+        <span class="eyebrow">CONOCE RICCA PIZZA</span>
+        <h2>El gusto de compartir <span>algo delicioso.</span></h2>
+        <p>
+          En Ricca Pizza queremos acompañar tus buenos momentos con sabores
+          para compartir. Elige tu pizza favorita y disfruta algo buenísimo.
+        </p>
+        <a class="text-link" href="#contacto">Encuéntranos <span>→</span></a>
+      </div>
+      <div class="about-decoration" aria-hidden="true">
+        <span>RICCA</span>
+        <span class="about-decoration-small">PIZZA</span>
+        <span class="about-decoration-star">✦</span>
+      </div>
+    </section>
+
+    <!-- BANNER -->
+    <section class="banner-section">
+      <div>
+        <span class="eyebrow">UN ANTOJO, UN BUEN MOMENTO</span>
+        <h2>Siempre hay espacio para una pizza.</h2>
+      </div>
+      <a class="button button-light" href="#menu">Ver menú</a>
+    </section>
+
+    <!-- CONTACTO -->
+    <section class="contact-section section-padding" id="contacto">
+      <div class="section-heading">
+        <span class="eyebrow">ESTAMOS PARA RECIBIRTE</span>
+        <h2>Visítanos en <span>Ricca Pizza</span></h2>
+        <p>Consulta nuestra ubicación y ponte en contacto.</p>
+      </div>
+
+      <div class="contact-grid">
+        <article class="contact-card">
+          <span class="contact-icon">⌖</span>
+          <h3>Ubicación</h3>
+          <p>José Antonio Albarrán 544, Col. del Parque, Toluca, Estado de México.</p>
+          <a
+            class="text-link"
+            href="https://www.google.com/maps/search/?api=1&query=Jose+Antonio+Albarran+544+Col+del+Parque+Toluca+Estado+de+Mexico"
+            target="_blank"
+            rel="noopener noreferrer"
+          >Cómo llegar <span>→</span></a>
+        </article>
+
+        <article class="contact-card">
+          <span class="contact-icon">☎</span>
+          <h3>Teléfono</h3>
+          <p>722 217 6564</p>
+          <a class="text-link" href="tel:+527222176564">Llamar <span>→</span></a>
+        </article>
+
+        <article class="contact-card">
+          <span class="contact-icon">◷</span>
+          <h3>Horario</h3>
+          <p>Martes a domingo: 12:00 a 20:30 h.</p>
+          <p class="contact-note">Lunes: cerrado. Horario pendiente de confirmación.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <!-- PIE DE PÁGINA -->
+  <footer class="site-footer">
+    <a class="footer-brand" href="#inicio">RICCA <strong>PIZZA</strong></a>
+    <p>¡La única buenísima!</p>
+    <span>© <span id="currentYear"></span> Ricca Pizza. Todos los derechos reservados.</span>
+  </footer>
+
+  <!-- VENTANA DE DETALLES DEL PRODUCTO -->
+  <div class="modal-overlay" id="productModal" aria-hidden="true">
+    <div class="product-modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal-close" id="modalClose" type="button" aria-label="Cerrar ventana">×</button>
+      <div class="modal-product-visual" id="modalVisual" aria-hidden="true">🍕</div>
+      <span class="eyebrow">RICCA PIZZA</span>
+      <h2 id="modalTitle">Producto</h2>
+      <p id="modalDescription"></p>
+      <div class="modal-price" id="modalPrice"></div>
+      <button class="button button-primary modal-confirm" id="modalConfirm" type="button">Entendido</button>
+    </div>
+  </div>
+
+  <script src="js/menu.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
